@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "CleanHeader") (type "KiCad") (uri "${KIPRJMOD}/Libs/CleanHeader.pretty") (options "") (descr ""))
+)
