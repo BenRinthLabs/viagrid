@@ -76,6 +76,8 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
+		(aux_axis_origin 118.5011 122.0036)
+		(grid_origin 118.5011 122.0036)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -89,7 +91,7 @@
 			(svgprecision 4)
 			(plotframeref no)
 			(mode 1)
-			(useauxorigin no)
+			(useauxorigin yes)
 			(hpglpennumber 1)
 			(hpglpenspeed 20)
 			(hpglpendiameter 15.000000)
@@ -111,9 +113,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "export/")
 		)
 	)
 	(net 0 "")
@@ -1791,6 +1793,66 @@
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 		(uuid "ffb6778a-a8a1-4d89-983d-80092be959d1")
+	)
+	(zone
+		(net 1)
+		(net_name "GND")
+		(layer "F.Cu")
+		(uuid "bf80a20d-c1bf-4bac-a628-a04ea0207da4")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 119 88.5) (xy 178 88.5) (xy 178 121.5) (xy 119 121.5)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 177.943039 88.523785) (xy 177.988794 88.576589) (xy 178 88.6281) (xy 178 121.376) (xy 177.980315 121.443039)
+				(xy 177.927511 121.488794) (xy 177.876 121.5) (xy 119.1256 121.5) (xy 119.058561 121.480315) (xy 119.012806 121.427511)
+				(xy 119.0016 121.376) (xy 119.0016 88.6281) (xy 119.021285 88.561061) (xy 119.074089 88.515306)
+				(xy 119.1256 88.5041) (xy 177.876 88.5041)
+			)
+		)
+	)
+	(zone
+		(net 1)
+		(net_name "GND")
+		(layer "B.Cu")
+		(uuid "86de742d-aa62-4bb4-9c5f-b08995dbd632")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 119 88.5) (xy 178 88.5) (xy 178 121.5) (xy 119 121.5)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 177.943039 88.523785) (xy 177.988794 88.576589) (xy 178 88.6281) (xy 178 121.376) (xy 177.980315 121.443039)
+				(xy 177.927511 121.488794) (xy 177.876 121.5) (xy 119.1256 121.5) (xy 119.058561 121.480315) (xy 119.012806 121.427511)
+				(xy 119.0016 121.376) (xy 119.0016 88.6281) (xy 119.021285 88.561061) (xy 119.074089 88.515306)
+				(xy 119.1256 88.5041) (xy 177.876 88.5041)
+			)
+		)
 	)
 	(embedded_fonts no)
 )
